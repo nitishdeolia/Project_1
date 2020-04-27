@@ -1,0 +1,711 @@
+/*##################dEFAULTS ##################*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+nav,
+footer {
+  display: block;
+}
+
+/*###################NAV BAR####################*/
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  overflow: hidden;
+  padding: 0;
+}
+
+ul.nav-left li {
+  list-style-type: none;
+  float: left;
+  padding: 3px;
+}
+
+ul.nav-left li.right {
+  float: right;
+  margin-right: 5em;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: white;
+  min-height: 18px;
+  font-weight: 500;
+  padding: 9px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+nav ul li.right a {
+  background: linear-gradient(to right, rgb(143, 200, 201), rgb(148, 181, 224));
+}
+
+nav ul li a:hover {
+  color: white;
+  background: linear-gradient(to right, rgb(143, 200, 201), rgb(148, 181, 224));
+  box-shadow: 0.5px 0.5px 2px grey;
+  transition: ease 0.4s;
+}
+
+ul.nav-left li.dropdown-icon {
+  display: none;
+}
+
+/* ################main content####################*/
+div.container,
+section div.img-1,
+section div.img-2,
+section div.last {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div.container div.img-logo img {
+  display: block;
+  margin: auto;
+}
+
+/*############################section##################*/
+header {
+  display: block;
+  height: 600px;
+  background-color: rgba(224, 219, 219, 0.815);
+}
+
+div.container {
+  background-image: url(../assets/back3.jpg);
+  height: 100vh;
+}
+
+section div.img-1 {
+  background-image: url(../assets/back1.jpg);
+  height: 60vh;
+}
+
+section div.img-2 {
+  background-image: url(../assets/skyset.jpg);
+  height: 80vh;
+}
+
+section div.last {
+  background-image: url(../assets/back3.jpg);
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.row::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+header div.row div.col-4 img {
+  width: 70%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+header p.top-header {
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: rgb(24, 29, 29);
+  text-shadow: 0px 0px 5px grey;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  height: 52vh;
+  background-color: #282828;
+}
+
+/*header div.row div.col-8 p {
+  text-align: left;
+  font-family: sans-serif;
+  position: relative;
+  top: 110px;
+  left: 60px;
+  font-size: 26px;
+  font-weight: bold;
+}*/
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.33%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/*##################content tiles@#######################*/
+
+div.container {
+  position: relative;
+}
+
+div.container div.get_transparent {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  height: 260px;
+  width: 860px;
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 6px;
+}
+
+div.container div.get {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  text-align: center;
+  display: inline-block;
+}
+
+div.container div.get h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 24px 0px;
+  color: white;
+}
+
+div.container div.get p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Spartan', sans-serif;
+  line-height: 1.8;
+  padding: 14px 10px;
+  color: white;
+}
+
+div.container div.get a {
+  margin: 10px;
+  padding: 8px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Spartan', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+}
+
+/*################second image styling beach###########*/
+section {
+  position: relative;
+}
+
+section div.section-down {
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  text-align: center;
+}
+
+section div.section-down div.headline-text {
+  font-size: 4em;
+  font-weight: 500;
+  font-family: 'lato', sans-serif;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+section div.section-down div.headline-text1 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'lato', sans-serif;
+  padding: 5px;
+  line-height: 0.8;
+  color: white;
+}
+
+section div.section-down div.button-for-join {
+  padding-top: 60px;
+}
+
+section div.section-down div.button-for-join a {
+  text-decoration: none;
+  color: white;
+  font-family: 'lato', sans-serif;
+  font-size: large;
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+section div.get_transparent {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  height: 260px;
+  width: 950px;
+  background-color: black;
+  opacity: 0.2;
+  border-radius: 6px;
+}
+
+/***********************section 2 content1##############*/
+section div.content1 {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(224, 219, 219, 0.815);
+}
+
+section .tab-row-places {
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+section div.content1 div.content1-row {
+  padding: 10px 0px;
+}
+
+section .content1-row h1 {
+  text-align: center;
+  padding-top: 4px;
+  font-size: 2.5em;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  letter-spacing: 3px;
+}
+
+section div.content1 div.tab-row-places.row .col-3 {
+  padding: 10px;
+}
+
+/*###################tiles####################*/
+
+.img-places {
+  width: 100%;
+  height: 200px;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+  border-radius: 40%;
+}
+
+.pic1 {
+  background-image: url(../assets/pic1.jpg);
+}
+
+.pic2 {
+  background-image: url(../assets/pic2.jpg);
+}
+
+.pic3 {
+  background-image: url(../assets/pic3.jpg);
+}
+
+.pic4 {
+  background-image: url(../assets/pic4.jpg);
+}
+
+section div.content1 div.tab-row-places.row .col-3 p {
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+div.view a {
+  text-decoration: none;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: rgb(57,
+      150,
+      212);
+}
+
+
+div.view a::after {
+  content: "\232A";
+  margin-left: 4px;
+  vertical-align: 1px;
+  font-size: 17px;
+}
+
+.view {
+  text-align: center;
+}
+
+.up-top {
+  margin-top: 17px;
+}
+
+/*################image-text ####################*/
+section div.large-leftcorner-text,
+div.small-center-text,
+div.large-rightcorner-text {
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+
+section div.large-leftcorner-text {
+  top: 2%;
+  left: 0%;
+}
+
+section div.small-center-text {
+  top: 40%;
+  left: 0%;
+}
+
+section div.large-rightcorner-text {
+  bottom: 0%;
+  left: 0%;
+}
+
+section div.large-leftcorner-text p {
+  color: aliceblue;
+  font-family: 'Spartan', sans-serif;
+  font-size: 10em;
+  text-shadow: 5px 5px 5px black;
+}
+
+section div.small-center-text p {
+  font-size: 8em;
+  color: aliceblue;
+  font-family: 'Spartan', sans-serif;
+  text-shadow: 5px 5px 5px black;
+}
+
+section div.large-rightcorner-text p {
+  font-size: 8em;
+  color: aliceblue;
+  font-family: 'Spartan', sans-serif;
+  text-shadow: 5px 5px 5px black;
+}
+
+/*###########################content2#############*/
+
+
+section div.content2 {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(224, 219, 219, 0.815);
+}
+
+section div.content2 div.content1-row h1 {
+  color: rgb(27, 26, 26);
+  font-size: 2.5em;
+  padding-top: 10px;
+}
+
+.pic5 {
+  background-image: url(../assets/pic5.jpg);
+}
+
+.pic6 {
+  background-image: url(../assets/pic6.jpg);
+}
+
+.pic7 {
+  background-image: url(../assets/pic7.jpg);
+}
+
+section div.content2 .tab-row-places {
+  width: 62%;
+  margin: auto;
+  height: auto;
+}
+
+section div.content2 div.tab-row-places div.col-4 {
+  height: auto;
+  margin: 10px;
+  box-shadow: 0px 0px 7px grey;
+}
+
+section div.content2 div.tab-row-places div.img-places {
+  height: 300px;
+}
+
+.white {
+  background-color: white;
+  height: 200px;
+}
+
+.white p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0px 20px;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+p.small-white {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*################last content3#######################*/
+section div.content3 {
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(224, 219, 219, 0.815);
+}
+
+section div.content3 div.newsletter,
+div.hr {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+div.hr {
+  padding-top: 50px;
+}
+
+section div.content3 div.newsletter div.newsletter-content {
+  line-height: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+section div.content3 div.newsletter div.newsletter-content p.font1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+p.font2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.fname {
+  margin-left: 40px;
+}
+
+div.input3 div.row {
+  margin-top: 40px;
+}
+
+div.input3 input[type=text],
+select,
+textarea {
+  width: 80%;
+  padding: 14px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 1px solid #fff;
+  box-shadow: 0px 1px 2px gray;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+div.input3 input[type=submit] {
+  width: 80%;
+  padding: 14px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border: 1px solid #407bae;
+  background-color: #407bae;
+}
+
+/*#########################foooter############################*/
+footer div.container5 {
+  width: 70%;
+  margin: auto;
+  display: block;
+  padding-top: 30px;
+}
+
+footer div.container5 div.row p {
+  color: whitesmoke;
+  font-size: 2.5em;
+  font-weight: 450;
+  font-family: 'Lato', sans-serif;
+  float: right;
+}
+
+footer div.container5 div.row a.only-one {
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-decoration: none;
+  float: right;
+  padding: 18px 100px 0px 0px;
+}
+
+footer div.container5 div.row a.only-one::after {
+  content: "\232A";
+  margin-left: 4px;
+  vertical-align: 1px;
+  font-size: 17px;
+}
+
+div.hr1 {
+  padding-top: 25px;
+}
+
+div.hr1 hr {
+  width: 100%;
+}
+
+footer div.container5 div.differ div.row a {
+  color: rgb(184, 175, 175);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block;
+  line-height: 2.5em;
+}
+
+footer div.container5 div.differ div.row a:hover {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+footer div.container5 div.differ div.row p {
+  font-size: 15px;
+  font-weight: 450;
+  font-family: sans-serif;
+  float: left;
+  display: block;
+}
+
+footer div.container5 div.differ div.row a.pi::after {
+  content: '\232A';
+  margin-left: 4px;
+  vertical-align: 2px;
+  font-size: 15px;
+}
+
+footer div.container5 div.differ {
+  padding-top: 15px;
+}
+
+footer div.container5 img {
+  width: 90%;
+  padding-top: 20px;
+}
+
+.height {
+  height: 80px;
+}
+
+/*#######################lastfooter##############*/
+
+footer div.second {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: block;
+}
+
+footer div.second ul {
+  margin-left: 15em;
+}
+
+footer div.second ul li {
+  float: left;
+  padding: 14px 6px 10px 10px;
+}
+
+footer div.second ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer div.second ul li a:hover {
+  text-decoration: underline;
+}

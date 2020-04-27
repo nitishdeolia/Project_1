@@ -1,0 +1,67 @@
+/* ##################### MOBILE VIEW #######################*/
+
+@media screen and (max-width: 780px) {
+  div.container {
+    height: 250px;
+    background-position: center;
+    position: relative;
+  }
+
+  div.container div.img-logo img {
+    width: 70px;
+    margin-right: 8px;
+  }
+
+  div.container nav {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  ul.nav-left li:not(:nth-child(7)) {
+    display: none;
+  }
+
+  ul.nav-left {
+    position: relative;
+  }
+
+  ul.nav-left li.right {
+    position: absolute;
+    float: left;
+  }
+
+  ul.nav-left li.right a {
+    color: white;
+    background: linear-gradient(to right, rgb(143, 200, 201), rgb(148, 181, 224));
+    box-shadow: 0.5px 0.5px 2px grey;
+  }
+
+  ul.nav-left li.dropdown-icon {
+    display: block;
+    float: right;
+  }
+
+  ul.nav-leftresponsive {
+    position: relative;
+  }
+
+  ul.nav-leftresponsive li.dropdown-icon {
+    /**will look later for the button*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  ul.nav-leftresponsive li {
+    display: block;
+  }
+
+  ul.nav-leftresponsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  ul.nav-leftresponsive li.right {
+    display: none;
+  }
+}
